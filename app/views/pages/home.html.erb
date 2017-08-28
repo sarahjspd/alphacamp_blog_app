@@ -1,4 +1,13 @@
 <h1>Hello World</h1>
+	
 	<%- (1..10).each do |num| %>
+	<div class="section <%= num %>">
 	<%= num %>
-	end
+	</div>
+	
+	<%- end %>
+
+	<%= link_to 'About', about_path %>
+
+
+
