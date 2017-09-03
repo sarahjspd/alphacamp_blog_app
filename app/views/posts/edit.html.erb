@@ -1,0 +1,37 @@
+<h3>Edit Me...</h3>
+
+<%= stylesheet_link_tag "posts" %>
+<%= form_for @post, url: post_path(id: @post.id), method: :put do |f| %>
+<table class="table table-hover">
+	<thead>	
+		<th><%= f.label :title %></th>
+		<th><%= f.label :author %></th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			  <%= f.text_field :title %>
+			</td>
+			<td>
+			  <%= f.text_field :author %>
+			</td>
+		</tr>
+	</tbody>
+
+	<thead>
+	<th><%= f.label :content %></th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<%= f.text_field :content %>
+			</td>
+		</tr>
+	</tbody>
+</table>
+		<div>
+		  <div class="buttons"><%= f.submit "Update_Now" %></div>
+		  <div class="buttons"><%= link_to "Back_to_all_Posts", posts_path %></div>
+		 </div>
+
+<% end %>

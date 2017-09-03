@@ -1,0 +1,14 @@
+	<div class="postsdetail">
+	<h1> Post Details </h1>
+	</div>
+
+	<h3> <%= @post.title %> </h3>
+	<code>Authored By: </code>
+	<p class="showtext"> <%= @post.author %></p>
+	<code>Content: </code>
+	<p class="showtext"><%= @post.content %></p>
+
+
+	<div class=buttons><%= link_to "Edit", edit_post_path(id: @post.id) %></div>
+	<div class=buttons><%= link_to "Back_to_All_Posts", posts_path %></div>
+

@@ -1,0 +1,39 @@
+h1 {
+	text-align: center;
+}
+
+div.postsdetail {
+
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+div.postcountd {
+
+	text-align: center;
+
+}
+
+.showtext, button.buttontitles, h3 {
+
+	padding: 10px;
+}
+
+div.buttons {
+
+
+	color: black;
+	font-size: 13px;
+	border: 1px solid;
+	border-color: #B1B0C2;
+	padding: 2.5px;	
+	display: inline-block;
+}
+
+
+table.table {
+
+
+	margin-top: 5%;
+}
+
